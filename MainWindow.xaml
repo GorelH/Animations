@@ -31,13 +31,11 @@
         <StackPanel Margin="20" Orientation="Horizontal">
             
             <Border Name="MyBorder" Width="10" Height="100" Background="Red">
-
                 <Border.Triggers>
                     <EventTrigger RoutedEvent="Border.MouseEnter">
                         <BeginStoryboard>
                             <Storyboard>
                                 <DoubleAnimation Storyboard.TargetName="MyBorder" Storyboard.TargetProperty="Width" To="30" Duration="0:0:0:0.2" />
-                                
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
@@ -45,12 +43,10 @@
                         <BeginStoryboard>
                             <Storyboard>
                                 <DoubleAnimation Storyboard.TargetName="MyBorder" Storyboard.TargetProperty="Width" To="10" Duration="0:0:0:0.2" />
-                                
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
                 </Border.Triggers>
-                
             </Border>
 
             <Border Width="200" Height="100" Background="Green"/>
